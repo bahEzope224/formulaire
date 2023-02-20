@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <style>
+        .inscripte{
+            background-color:whitesmoke;
+
+
+        }
+        body{
+            background-color: whitesmoke;
+
+        }   
+        
+        input, select, textarea{
+            background-color:rgb(187, 213, 196)
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main>
+
+
+        <fieldset>
+            <legend class="inscripte">Inscription formation</legend>
+
+            <h2>Identité</h2>
+            <form class="formule" action="https://www.google.fr" method="get" target="_blank">
+                <label for="id-nom"> nom: </label>
+                <input type="text" name="nom" id="id-nom" placeholder="votre nom"required>
+                <br>
+                <label for="id-prenom">prenom: </label>
+                <input type="text" name="prenom" id="id-prenom" placeholder="votre prenom"required>
+                <br>
+                <label for="id-date-naissance"> date de naissance: </label>
+                <input type="date" name="date-naissance" id="id-date-naissance" required>
+                <br>
+                <label for="id_email">Email: </label>
+                <input type="email" name="email" id="id_email" placeholder = "exemple@mail.com "required>
+                <br>
+                <label for="id-mdp">entrer un mot de passe (6 caractère minimun): </label>
+                <input type="password" name="mdp" id="id-mdp" required minlength="6 ">
+                <br>
+                <label for="id-diplome">dernier diplome obtenue: </label>
+                <select name="diplomes" id="id-diplome>
+       ²             <option value="diplome ">--selectionner un diplome--</option>
+                    <option value=" brevet">brevet de college</option>
+                    <option value="bac">baccalaureat</option>
+                    <option value="bts">bts</option>
+                    <option value="licence">licence</option>
+                    <option value="master">master</option>
+                    <option value="doctorat">doctorat</option>
+                    <option value="autre">autre</option>
+
+                </select>
+                <br>
+                <label for="id-formation">formation souhaité(é): </label>
+                <input type="text" name="formation" id="id-formation"required>
+            
+            <h2>Motivation</h2>
+            <p>pourquoi vous voulez rejoindre la formation selectionée </p>
+
+
+            <label for="id-texte"></label>
+
+            <textarea name="texte" id="id-texte"  rows="30" cols="150" placeholder="vos motivations"></textarea>
+            <br>
+
+            <input type="submit" value="valider">
+        </form>
+
+        </fieldset>
+        
+
+        
+    </main>
+
+</body>
+
+</html>
